@@ -37,6 +37,7 @@ args.push(process.argv[6])
 args.push("-p")
 args.push(process.argv[7])
 
+args.push("-s")
 args.push("declare")
 args.push("queue")
 
