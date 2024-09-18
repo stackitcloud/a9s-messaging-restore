@@ -41,9 +41,9 @@ args.push("-s")
 args.push("declare")
 args.push("queue")
 
-const backupFile = process.argv[8]
-
-const data = require(backupFile)
+const path = require('path');
+const backupFile = path.resolve(process.argv[8]);
+const data = require(backupFile);
 
 if (!data.queues) {
   console.error("No queues found in backup.")
